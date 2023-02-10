@@ -1,8 +1,14 @@
-%% Ruthvik Bommena
-% February 8th, 2023
-% Function to solve Lambert's Equation
-
 function [a,v1,v2,dv1,dv2,dv] = LambertsSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu)
+%%  < File Description >
+%    File Name:     LambertsSolver.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to solve Lambert's Equation
+%    Inputs:        State vectors of departure and arrival points, time of
+%    flight, and gravitational parameter
+%    References:    Ch 5. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
 r1 = norm(r1Vec);
 r2 = norm(r2Vec);

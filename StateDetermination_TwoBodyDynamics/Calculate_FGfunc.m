@@ -1,10 +1,13 @@
-%% Ruthvik Bommena
-% February 8th, 2023
-% Function to plot s/c trajectory from f and g solutions
-
 function Calculate_FGfunc
+%%  < File Description >
+%    File Name:     Calculate_FGfunc.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to calculate s/c trajectory from f and g solutions
+%    References:    Ch 2. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
-close all; clc;
 constants;
 
 r0 = [-8903.833 1208.356 213.066]; %km

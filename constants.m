@@ -1,4 +1,10 @@
-%% Constants
+%%  < File Description >
+%    File Name:     constants.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Contains parameters of a few bodies in the Solar System
 
 % Radius (km)
 RE = 6378; % Earth

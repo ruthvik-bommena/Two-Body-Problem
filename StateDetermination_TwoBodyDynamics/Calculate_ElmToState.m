@@ -1,12 +1,15 @@
-%% Ruthvik Bommena
-% February 8th, 2023
-% Function to calculte State Vectors from Orbital Elements
-
 function Calculate_ElmToState
-
-close all; clc;
+%%  < File Description >
+%    File Name:     Calculate_ElmToState.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to calculte State Vectors from Orbital Elements
+%    References:    Ch 3. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
 constants; 
+
 a = 8000; %km
 e = 0.125;
 % Input Orbital Elements in degrees

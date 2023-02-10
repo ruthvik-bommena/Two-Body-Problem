@@ -1,10 +1,14 @@
-%% Ruthvik Bommena
-% February 8th, 2023
-% Function to Plot Lambert's solution
-
 function Calculate_Lamberts
-
-close all; clc;
+%%  < File Description >
+%    File Name:     Calculate_Lamberts.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to solve Lambert's solution
+%    Inputs:        State vectors of departure and arrival points, time of
+%    flight, and gravitational parameter
+%    References:    Ch 5. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
 constants;
 TU = sqrt(AU^3/muS);

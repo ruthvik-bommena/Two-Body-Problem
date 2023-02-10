@@ -1,11 +1,12 @@
-%% Ruthvik Bommena
-% February 9th, 2023
-% Function to calculate (r,v) at time t, given (r0,v0) at time t0
-% where t=t0+dT
-
 function Calculate_StateAtDT
-
-close all; clc;
+%%  < File Description >
+%    File Name:     Calculate_StateAtDT.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to calculate (r,v) at time t, given (r0,v0) at time t0 where t=t0+dT
+%    References:    Ch 3. Orbital Mechanics for Engineering Students, 2013, Howard Curtis.
 
 constants;
 

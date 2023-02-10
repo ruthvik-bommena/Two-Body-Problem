@@ -1,9 +1,14 @@
-%% Ruthvik Bommena
-% February 9th, 2023
-% Function to solve universal Kepler's equation for the universal anomaly X
-% Input magnitude of the position (r0) and radial velocity (vr0) at t0
-
 function [x,ratio,alpha,C,S] = UniversalKepler(r0,vr0,dT,mu,a)
+%%  < File Description >
+%    File Name:     UniversalKepler.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to solve universal Kepler's equation for the universal anomaly X
+%    Inputs:        Magnitude of the position 'r0' and radial velocity
+%    'vr0' at t0, change in time dT, gravitational parameter 'mu', and semimajor axis 'a'
+%    References:    Ch 3. Orbital Mechanics for Engineering Students, 2013, Howard Curtis.
 
 alpha = 1/a;
 

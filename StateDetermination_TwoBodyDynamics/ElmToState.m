@@ -1,8 +1,13 @@
-%% Ruthvik Bommena
-% February 8th, 2023
-% Function to convert Orbital Elements to State Vectors
-
 function [r,v] = ElmToState(a,e,i,alpha,omega,M,mu)
+%%  < File Description >
+%    File Name:     ElmToState.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to convert State Vectors to Orbital Elements
+%    Inputs:        Orbital Elements (a,e,i,alpha,omega), Mean Anamoly M, gravitational parameter mu
+%    References:    Ch 3. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
 % convert to radians
 i = i*pi/180;

@@ -1,8 +1,13 @@
-%% Ruthvik Bommena
-% February 8th, 2023
-% Function to calculate s/c state using f and g solutions
-
 function [r,v] = FGfunc(r0,v0,tf,mu)
+%%  < File Description >
+%    File Name:     FGfunc.m
+%    Compiler:      MATLAB R2022b
+%    Created by:    Ruthvik Bommena
+%    Date:          10 February, 2022
+%    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
+%    Description:   Function to calculate state using f and g solutions
+%    Inputs:        State vectors, time, gravitational parameter
+%    References:    Ch 2. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
 rMag = norm(r0); 
 vMag = norm(v0); 
