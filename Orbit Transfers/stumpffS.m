@@ -1,21 +1,21 @@
-function C = stumpffC(z)
+function S = stumpffS(z)
 %%  < File Description >
-%    File Name:     stumpffC.m
+%    File Name:     stumpffS.m
 %    Compiler:      MATLAB R2022b
 %    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
-%    Description:   Function to calculate Stumpff function C(z)
+%    Description:   Function to calculate Stumpff function S(z)
 %    Inputs:        z (z=alpha*x^2), where 'alpha' is 1/a, 'x' is the universal
 %    anomaly, and 'a' is the semimajor axis
 %    References:    Ch 3. Orbital Mechanics for Engineering Students, 2013, Howard Curtis.
 
     if z>0
-        C = (1-cos(sqrt(z)))/z;
+        S = (sqrt(z)-sin(sqrt(z)))/(sqrt(z))^3;
     elseif z<0
-        C = (cosh(sqrt(-z))-1)/-z;
+        S = (sinh(sqrt(-z))-sqrt(-z))/(sqrt(-z))^3;
     else
-        C = 1/2;
+        S = 1/6;
     end
 
 end

@@ -5,9 +5,7 @@ function Calculate_Lamberts
 %    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
-%    Description:   Function to solve Lambert's solution
-%    Inputs:        State vectors of departure and arrival points, time of
-%    flight, and gravitational parameter
+%    Description:   Function to calculate delta V using Lambert's Equation
 %    References:    Ch 5. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
 constants;
@@ -22,6 +20,6 @@ v1Vec = [1.897300201461335E+01, -2.268665080580648E+01, 5.966729305662000E-04]./
 r2Vec = [-7.850925795703618E+07, 1.374546686841051E+08, -9.195926177815042E+06]./AU;
 v2Vec = [-2.455504321364110E+01, -1.023862606665380E+01, -3.504079122987891E-02]./AU*TU; 
 
-[a,v1,v2,dv1,dv2,dv] = LambertsSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu);
+[a,v1,v2,dv1,dv2,dv] = LambertSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu);
 
 end

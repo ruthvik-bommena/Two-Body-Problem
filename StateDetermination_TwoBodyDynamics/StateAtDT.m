@@ -23,7 +23,7 @@ r = norm(R);
 fDot = sqrt(mu)*(alpha*x^3*S - x)/(r*r0);
 gDot = 1 - x^2*C/r;
 
-V = fDot*r0 + gDot*v0;  % Velocity at time=t0+dT
+V = fDot*R0 + gDot*V0;  % Velocity at time=t0+dT
 v = norm(V);
 
 end

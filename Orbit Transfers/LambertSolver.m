@@ -1,6 +1,6 @@
-function [a,v1,v2,dv1,dv2,dv] = LambertsSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu)
+function [a,v1,v2,dv1,dv2,dv] = LambertSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu)
 %%  < File Description >
-%    File Name:     LambertsSolver.m
+%    File Name:     LambertSolver.m
 %    Compiler:      MATLAB R2022b
 %    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
