@@ -3,7 +3,7 @@ function [x,alpha,C,S] = Calculate_UniversalAnomalyX(R0,V0,dT,mu)
 %    Author:        Ruthvik Bommena
 %    File Name:     Calculate_UniversalAnomalyX.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate universal anomaly X from universal Kepler's equation
 %    Inputs:        Initial state vectors, change in time dT, gravitational parameter 'mu'

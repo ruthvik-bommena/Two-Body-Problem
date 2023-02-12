@@ -2,7 +2,7 @@
 %    Author:        Ruthvik Bommena
 %    File Name:     constants.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Contains parameters of a few bodies in the Solar System
 

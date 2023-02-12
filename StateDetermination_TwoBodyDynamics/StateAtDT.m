@@ -3,7 +3,7 @@ function [R,V] = StateAtDT(R0,V0,dT,mu)
 %    Author:        Ruthvik Bommena
 %    File Name:     StateAtDT.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate (r,v) at time t, given (r0,v0) at time t0
 %    Inputs:        Initial state vectors 'R0' and 'V0', change in time, 'dT', gravitational parameter 'mu'

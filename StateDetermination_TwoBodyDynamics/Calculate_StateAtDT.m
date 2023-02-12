@@ -3,7 +3,7 @@ function Calculate_StateAtDT
 %    Author:        Ruthvik Bommena
 %    File Name:     Calculate_StateAtDT.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate (r,v) at time t, given (r0,v0) at time t0 where t=t0+dT
 %    References:    Ch 3. Orbital Mechanics for Engineering Students, 2013, Howard Curtis.

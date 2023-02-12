@@ -3,7 +3,7 @@ function [a,v1,v2,dv1,dv2,dv] = LambertSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu)
 %    Author:        Ruthvik Bommena
 %    File Name:     LambertSolver.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to solve Lambert's Equation
 %    Inputs:        State vectors of departure and arrival points, time of

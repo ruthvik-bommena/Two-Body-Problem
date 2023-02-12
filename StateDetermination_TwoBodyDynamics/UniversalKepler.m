@@ -3,7 +3,7 @@ function [x,ratio,alpha,C,S] = UniversalKepler(r0,vr0,dT,mu,a)
 %    Author:        Ruthvik Bommena
 %    File Name:     UniversalKepler.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to solve universal Kepler's equation for the universal anomaly X
 %    Inputs:        Magnitude of the position 'r0' and radial velocity

@@ -3,7 +3,7 @@ function C = stumpffC(z)
 %    Author:        Ruthvik Bommena
 %    File Name:     stumpffC.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate Stumpff function C(z)
 %    Inputs:        z (z=alpha*x^2), where 'alpha' is 1/a, 'x' is the universal

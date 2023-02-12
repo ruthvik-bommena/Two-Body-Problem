@@ -3,7 +3,7 @@ function [r,v] = FGfunc(r0,v0,tf,mu)
 %    Author:        Ruthvik Bommena
 %    File Name:     FGfunc.m
 %    Compiler:      MATLAB R2022b
-%    Date:          10 February, 2022
+%    Date:          10 February, 2023
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate state using f and g solutions
 %    Inputs:        State vectors, time, gravitational parameter
