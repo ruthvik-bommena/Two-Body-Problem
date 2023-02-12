@@ -1,8 +1,8 @@
 function Calculate_FGfunc
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     Calculate_FGfunc.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate s/c trajectory from f and g solutions

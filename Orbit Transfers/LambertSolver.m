@@ -1,8 +1,8 @@
 function [a,v1,v2,dv1,dv2,dv] = LambertSolver(r1Vec,r2Vec,v1Vec,v2Vec,tf,mu)
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     LambertSolver.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to solve Lambert's Equation

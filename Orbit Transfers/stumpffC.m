@@ -1,8 +1,8 @@
 function C = stumpffC(z)
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     stumpffC.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate Stumpff function C(z)

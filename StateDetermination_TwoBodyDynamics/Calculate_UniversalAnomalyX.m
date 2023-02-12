@@ -1,8 +1,8 @@
 function [x,alpha,C,S] = Calculate_UniversalAnomalyX(R0,V0,dT,mu)
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     Calculate_UniversalAnomalyX.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate universal anomaly X from universal Kepler's equation

@@ -1,8 +1,8 @@
 function [a,e,i,alpha,omega,f] = StateToElm(r0,v0,mu)
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     StateToElm.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to convert State Vectors to Orbital Elements

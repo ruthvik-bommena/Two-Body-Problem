@@ -1,8 +1,8 @@
 function [V1,V2] = LambertHC(R1,R2,t,mu)
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     LambertHC.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to solve Lambert's Equation

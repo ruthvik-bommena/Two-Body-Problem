@@ -1,8 +1,8 @@
 function Calculate_LambertHC
 %%  < File Description >
+%    Author:        Ruthvik Bommena
 %    File Name:     LambertHC.m
 %    Compiler:      MATLAB R2022b
-%    Created by:    Ruthvik Bommena
 %    Date:          10 February, 2022
 %    Affiliation:   Department of Aerospace Engineering, University of Illinois Urbana-Champaign.
 %    Description:   Function to calculate delta V using Lambert's Equation
