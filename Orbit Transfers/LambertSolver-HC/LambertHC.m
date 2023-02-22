@@ -1,4 +1,4 @@
-function [V1,V2] = LambertHC(R1,R2,t,mu)
+function [V1,V2] = LambertHC(R1,R2,t,mu,string)
 %%  < File Description >
 %    Author:        Ruthvik Bommena
 %    File Name:     LambertHC.m
@@ -16,16 +16,9 @@ r2 = norm(R2);
 theta = acos(dot(R1,R2)/(r1*r2));
 cross12 = cross(R1,R2);
 
-% Determine whether the orbit is prograde or retrograde:
-    if theta<=pi
-        string = 'pro';
-    else 
-        string = 'retro';
-    end
-
 % Determine transfer angle
     if strcmp(string, 'pro')
-        if cross12(3) < 0
+        if cross12(3) <= 0
             theta = 2*pi - theta;
         end
     elseif strcmp(string,'retro')
@@ -38,7 +31,7 @@ cross12 = cross(R1,R2);
 A = sin(theta)*sqrt((r1*r2)/(1-cos(theta)));
 
 % Newton iteration to solve Eq. 5.39 for z
-z = 1.5;
+z = 1;
     while F(z,t,r1,r2,A,mu) < 0
         z = z + 0.1;
     end
