@@ -1,4 +1,4 @@
-function [a,e,i,alpha,omega,f] = StateToElm(r0,v0,mu)
+function [a,e,i,alpha,omega,f] = StateToElm(R0,V0,mu)
 %%  < File Description >
 %    Author:        Ruthvik Bommena
 %    File Name:     StateToElm.m
@@ -9,15 +9,15 @@ function [a,e,i,alpha,omega,f] = StateToElm(r0,v0,mu)
 %    Inputs:        State vectors and gravitational parameter
 %    References:    Ch 3. Orbital Mechanics, 2013, J.E. Prussing and B.A. Conway
 
-rMag = norm(r0);
-vMag = norm(v0);
+r0 = norm(R0);
+v0 = norm(V0);
 
-a = (rMag*mu)/(2*mu - vMag^2*rMag); % semimajor axis
+a = (r0*mu)/(2*mu - v0^2*r0); % semimajor axis
 
-eVec = (vMag^2/mu - 1/rMag)*r0 - (1/mu * dot(r0,v0) * v0);
+eVec = (v0^2/mu - 1/r0)*R0 - (1/mu * dot(R0,V0) * V0);
 e = norm(eVec); % eccentricity
 
-h = cross(r0,v0); 
+h = cross(R0,V0); 
 hMag = norm(h);
 
 I = [1 0 0];
@@ -45,8 +45,8 @@ else
     omega = 360 - omega;
 end
 
-f = acosd(dot(eVec,r0) / (e*rMag)); % True Anamoly
-check3 = dot(r0,v0);
+f = acosd(dot(eVec,R0) / (e*r0)); % True Anamoly
+check3 = dot(R0,V0);
 if check3>0
     f = f;
 else

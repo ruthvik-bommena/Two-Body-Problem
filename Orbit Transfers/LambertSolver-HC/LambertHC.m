@@ -17,25 +17,33 @@ theta = acos(dot(R1,R2)/(r1*r2));
 cross12 = cross(R1,R2);
 
 % Determine transfer angle
-    if strcmp(string, 'pro')
-        if cross12(3) <= 0
+    if strcmp(string, 'Prograde')
+        if cross12(3) < 0
             theta = 2*pi - theta;
         end
-    elseif strcmp(string,'retro')
+    elseif strcmp(string,'Retrograde')
         if cross12(3) >= 0
             theta = 2*pi - theta;
         end
     end
 
+% Check if transfer time is negative
+if t<0
+
+V1 = NaN*ones(1,3);
+V2 = NaN*ones(1,3);
+
+else
+
 % A - a constant given by Equation 5.35
 A = sin(theta)*sqrt((r1*r2)/(1-cos(theta)));
 
 % Newton iteration to solve Eq. 5.39 for z
-z = 1;
+z = 0;
     while F(z,t,r1,r2,A,mu) < 0
         z = z + 0.1;
     end
-iter = 1; iterMax = 10000;
+iter = 1; iterMax = 1000;
 ratio = 1; errMin = 1e-10;
     while abs(ratio)>errMin && iter<=iterMax
         ratio = F(z,t,r1,r2,A,mu)/dFdz(z,r1,r2,A);
@@ -43,15 +51,21 @@ ratio = 1; errMin = 1e-10;
         iter = iter+1;
     end
 
-% Eq. 5.46
-f = 1 - y(z,r1,r2,A)/r1;
-g = A * sqrt(y(z,r1,r2,A)/mu);
-gDot = 1 - y(z,r1,r2,A)/r2;
+if iter>=iterMax
+   V1 = NaN*ones(1,3);
+   V2 = NaN*ones(1,3);
+else
+    % Eq. 5.46
+    f = 1 - y(z,r1,r2,A)/r1;
+    g = A * sqrt(y(z,r1,r2,A)/mu);
+    gDot = 1 - y(z,r1,r2,A)/r2;
+    
+    % Initial and final velocity vectors
+    V1 = 1/g * (R2 - f*R1);
+    V2 = 1/g * (gDot*R2 - R1);
+end
 
-% Initial and final velocity vectors
-V1 = 1/g * (R2 - f*R1);
-V2 = 1/g * (gDot*R2 - R1);
-
+end
 
 % Eq. 5.38
 function val = y(z,r1,r2,A)
